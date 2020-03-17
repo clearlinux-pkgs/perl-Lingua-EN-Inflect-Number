@@ -4,7 +4,7 @@
 #
 Name     : perl-Lingua-EN-Inflect-Number
 Version  : 1.12
-Release  : 11
+Release  : 12
 URL      : https://cpan.metacpan.org/authors/id/N/NE/NEILB/Lingua-EN-Inflect-Number-1.12.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/N/NE/NEILB/Lingua-EN-Inflect-Number-1.12.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libl/liblingua-en-inflect-number-perl/liblingua-en-inflect-number-perl_1.12-1.debian.tar.xz
@@ -80,7 +80,7 @@ make TEST_VERBOSE=1 test
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-Lingua-EN-Inflect-Number
 cp %{_builddir}/Lingua-EN-Inflect-Number-1.12/LICENSE %{buildroot}/usr/share/package-licenses/perl-Lingua-EN-Inflect-Number/f64962ea2646981898a121d94ec42de3a591f049
-cp %{_builddir}/Lingua-EN-Inflect-Number-1.12/deblicense/copyright %{buildroot}/usr/share/package-licenses/perl-Lingua-EN-Inflect-Number/48aa45c200805df9bfc9e90f8d938b2cb721afdd
+cp %{_builddir}/debian/copyright %{buildroot}/usr/share/package-licenses/perl-Lingua-EN-Inflect-Number/48aa45c200805df9bfc9e90f8d938b2cb721afdd
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -105,4 +105,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/Lingua/EN/Inflect/Number.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Lingua/EN/Inflect/Number.pm
