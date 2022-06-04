@@ -4,7 +4,7 @@
 #
 Name     : perl-Lingua-EN-Inflect-Number
 Version  : 1.12
-Release  : 20
+Release  : 21
 URL      : https://cpan.metacpan.org/authors/id/N/NE/NEILB/Lingua-EN-Inflect-Number-1.12.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/N/NE/NEILB/Lingua-EN-Inflect-Number-1.12.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libl/liblingua-en-inflect-number-perl/liblingua-en-inflect-number-perl_1.12-1.debian.tar.xz
@@ -105,4 +105,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.34.0/Lingua/EN/Inflect/Number.pm
+/usr/lib/perl5/*
